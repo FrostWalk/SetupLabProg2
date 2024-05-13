@@ -7,12 +7,19 @@
 \usepackage{xcolor}
 \usepackage{tcolorbox}
 
-% Definizione di un nuovo ambiente per il rettangolo
+% Definizione di un nuovo ambiente per il rettangolo nero senza titolo (usato per mostrare i comandi da terminale)
 \newtcolorbox{ret}{
     colback=white,
     colframe=black,
     boxrule=1pt,
     boxsep=5pt,
+}
+
+\newtcolorbox{warningbox}{
+    colback=yellow!10, % Sfondo giallo chiaro
+    colframe=yellow!80!black, % Bordo giallo scuro
+    fonttitle=\bfseries, % Testo in grassetto
+    title=Attenzione!, % Titolo del box
 }
 
 % Disattiva lo spazio all'inizio delle nuove righe
