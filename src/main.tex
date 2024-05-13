@@ -7,6 +7,8 @@
 \usepackage{xcolor}
 \usepackage{tcolorbox}
 \usepackage{etoolbox}
+\usepackage{caption}
+\usepackage{float}
 
 % Definizione di un nuovo ambiente per il rettangolo nero senza titolo (usato per mostrare i comandi da terminale)
 \newtcolorbox{ret}{
@@ -26,17 +28,19 @@
 % Disattiva lo spazio all'inizio delle nuove righe
 \setlength{\parindent}{0pt}
 
-\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesection}{\arabic{section}} % Imposta la numerazione delle sezioni a partire da 1 invece che da 0 (1.n invece di 0.n.m)
+
+\setcounter{tocdepth}{3} % Imposta la profondità dell'indice fino alle subsubsection
 
 \begin{document}
 
-    \include{./src/capitoli/01-titolo/titolo.tex}
-    \include{./src/capitoli/02-prefazione/prefazione.tex}
+    \include{./src/capitoli/01/titolo.tex}
+    \include{./src/capitoli/02/prefazione.tex}
     
     \tableofcontents
 
     \part{Computer personale}
-        \include{./src/capitoli/03-java/java.tex}
-        \include{./src/capitoli/04-intellij/intellij.tex}
+        \include{./src/capitoli/03/java.tex}
+        \include{./src/capitoli/04/intellij.tex}
 
 \end{document}

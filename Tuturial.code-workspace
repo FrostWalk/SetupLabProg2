@@ -58,6 +58,10 @@
 				"name": "pdflatex",
 				"tools": ["pdflatex", "pdflatex", "pdflatex"]
 			}
+		],
+		"cSpell.language": "en,it",
+		"cSpell.words": [
+			"Intelli"
 		]
 	}
 }
