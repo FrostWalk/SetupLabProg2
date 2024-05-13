@@ -1,0 +1,32 @@
+\documentclass{report}
+
+\usepackage[italian]{babel}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+
+% Definizione di un nuovo ambiente per il rettangolo
+\newtcolorbox{ret}{
+    colback=white,
+    colframe=black,
+    boxrule=1pt,
+    boxsep=5pt,
+}
+
+% Disattiva lo spazio all'inizio delle nuove righe
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+    \include{./src/capitoli/01-titolo/titolo.tex}
+    \include{./src/capitoli/02-prefazione/prefazione.tex}
+    
+    \tableofcontents
+
+    \part{Computer personale}
+        \include{./src/capitoli/03-java/java.tex}
+    
+
+\end{document}
