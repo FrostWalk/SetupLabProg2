@@ -6,6 +6,7 @@
 \usepackage{listings}
 \usepackage{xcolor}
 \usepackage{tcolorbox}
+\usepackage{etoolbox}
 
 % Definizione di un nuovo ambiente per il rettangolo nero senza titolo (usato per mostrare i comandi da terminale)
 \newtcolorbox{ret}{
@@ -25,6 +26,8 @@
 % Disattiva lo spazio all'inizio delle nuove righe
 \setlength{\parindent}{0pt}
 
+\renewcommand{\thesection}{\arabic{section}}
+
 \begin{document}
 
     \include{./src/capitoli/01-titolo/titolo.tex}
@@ -34,6 +37,6 @@
 
     \part{Computer personale}
         \include{./src/capitoli/03-java/java.tex}
-    
+        \include{./src/capitoli/04-intellij/intellij.tex}
 
 \end{document}
