@@ -42,4 +42,38 @@
             Adesso dovete solo aspettare la mail di conferma per completare la creazione dell'account, solitamente richiede una settimana o più quindi abbiate pazienza.
     
     \subsection{Installare il ToolBox}
-        Il modo più semplice per installare e mantenere aggiornati i prodotti JetBrains è utilizzare il ToolBox, un programma che 
+        Il modo più semplice per installare e mantenere aggiornati i prodotti JetBrains è utilizzare il ToolBox, un programma che consente di scaricare e mantenere aggiornati 
+        tutti gli IDE di JetBrains, recatevi all'indirizzo \url{https://www.jetbrains.com/toolbox-app/}
+        \subsubsection{Linux}
+            scaricate il file .tar.gz, apritelo ed entrate nell'unica cartella presente, estraete il file e recatevi nella cartella in cui lo avete estratto. cliccate due volte col tasto 
+            sinistro sul file chiamato jetbrains-toolbox e aspettate che vi si apra la seguente finestra (potrebbe richiedere qualche secondo)
+            \begin{figure}[H]
+                \centering
+                \graphicspath{{src/capitoli/04/img/}}
+                \includegraphics[width=0.5\textwidth]{toolbox-primo-avvio.png}
+                \caption{Primo avvio del toolbox}
+                \label{fig:Primo avvio del toolbox}
+            \end{figure}
+            cliccate su \textbf{Continue $\rightarrow$ Accept License Agreement $\rightarrow$ Get Started}.
+            \begin{warningbox}
+                Nel caso in cui la finestra non compaia (dopo aver aspettato un intervallo di tempo ragionevole), o l'abbiate chiusa per errore, 
+                basterà andare nel \textbf{system tray} (barra delle notifiche), e cercare l'icona di una scatola rosa e nera. Per esempio in Ubuntu:
+                \begin{figure}[H]
+                    \centering
+                    \graphicspath{{src/capitoli/04/img/}}
+                    \includegraphics[width=0.5\textwidth]{barra-toolbox.png}
+                    \caption{Icona del toolbox nel system tray di Gnome}
+                    \label{fig:Icona del toolbox nel system tray di Gnome}
+                \end{figure}
+                se non fosse presente nel system tray, cercate nel menù delle applicazioni del vostro ambiente desktop, nel raro caso in cui non sia presente 
+                nemmeno li, allora probabilmente vi manca \textbf{libfuse}, vi invito a \textbf{cercare su Google il nome della vostra distribuzione seguito dalla versione 
+                e dalla frase "jetbrains toolbox won't start"}, sicuramente troverete una guida che saprà aiutarvi.
+            \end{warningbox}
+            A questo punto cliccate nella rotella in alto a destra e poi su \textbf{Log in}
+            \begin{figure}[H]
+                \centering
+                \graphicspath{{src/capitoli/04/img/}}
+                \includegraphics[width=0.35\textwidth]{toolbox-login.png}
+                \caption{Menù per effettuare il login sul toolbox}
+                \label{fig:Menù per effettuare il login sul toolbox}
+            \end{figure}
