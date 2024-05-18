@@ -44,17 +44,10 @@
     \subsection{Installare il ToolBox}
         Il modo più semplice per installare e mantenere aggiornati i prodotti JetBrains è utilizzare il ToolBox, un programma che consente di scaricare e mantenere aggiornati 
         tutti gli IDE di JetBrains, recatevi all'indirizzo \url{https://www.jetbrains.com/toolbox-app/}
+
         \subsubsection{Linux}
             scaricate il file .tar.gz, apritelo ed entrate nell'unica cartella presente, estraete il file e recatevi nella cartella in cui lo avete estratto. cliccate due volte col tasto 
-            sinistro sul file chiamato jetbrains-toolbox e aspettate che vi si apra la seguente finestra (potrebbe richiedere qualche secondo)
-            \begin{figure}[H]
-                \centering
-                \graphicspath{{src/capitoli/04/img/}}
-                \includegraphics[width=0.5\textwidth]{toolbox-primo-avvio.png}
-                \caption{Primo avvio del toolbox}
-                \label{fig:Primo avvio del toolbox}
-            \end{figure}
-            cliccate su \textbf{Continue $\rightarrow$ Accept License Agreement $\rightarrow$ Get Started}.
+            sinistro sul file chiamato jetbrains-toolbox e aspettate che vi si apra la seguente finestra (potrebbe richiedere una decina di secondi)
             \begin{warningbox}
                 Nel caso in cui la finestra non compaia (dopo aver aspettato un intervallo di tempo ragionevole), o l'abbiate chiusa per errore, 
                 basterà andare nel \textbf{system tray} (barra delle notifiche), e cercare l'icona di una scatola rosa e nera. Per esempio in Ubuntu:
@@ -68,12 +61,60 @@
                 se non fosse presente nel system tray, cercate nel menù delle applicazioni del vostro ambiente desktop, nel raro caso in cui non sia presente 
                 nemmeno li, allora probabilmente vi manca \textbf{libfuse}, vi invito a \textbf{cercare su Google il nome della vostra distribuzione seguito dalla versione 
                 e dalla frase "jetbrains toolbox won't start"}, sicuramente troverete una guida che saprà aiutarvi.
-            \end{warningbox}
-            A questo punto cliccate nella rotella in alto a destra e poi su \textbf{Log in}
+            \end{warningbox}            
+
+        \subsubsection{Windows}
+            scaricate il file .exe, apritelo e cliccate sul tasto \textbf{Install},
             \begin{figure}[H]
                 \centering
                 \graphicspath{{src/capitoli/04/img/}}
-                \includegraphics[width=0.35\textwidth]{toolbox-login.png}
-                \caption{Menù per effettuare il login sul toolbox}
-                \label{fig:Menù per effettuare il login sul toolbox}
+                \includegraphics[width=0.4\textwidth]{toolbox-windows.png}
+                \caption{Installer del toolbox su Windows}
+                \label{fig:Installer del toolbox su Windows}
             \end{figure}
+            aspettate che finisca e che vi si apra la finestra del toolbox, \textbf{nel caso non la troviate} 
+            controllate la system tray
+            \begin{figure}[H]
+                \centering
+                \graphicspath{{src/capitoli/04/img/}}
+                \includegraphics[width=0.5\textwidth]{toolbox-tray-windows.png}
+                \caption{Icona del toolbox nel system tray di Windows}
+                \label{fig:Icona del toolbox nel system tray di Windows}
+            \end{figure}
+
+        \subsubsection{MacOS}
+            scaricate il file .dmg \textbf{prestando attenzione all'architettura del vostro Mac: macOS Intel per i processori x64 e macOS Apple 
+            Silicon per i processori della serie M} macOS Intel per i processori x64 apritelo e seguite le istruzioni trascinando l'applicazioni 
+            all'interno della cartella Applications, dopodiché avviatela cercandola nel menù delle applicazioni.\clearpage
+
+    \subsection{Utilizzare il ToolBox}
+        Quando vi si sarà presentata la seguente finestra:
+        \begin{figure}[H]
+            \centering
+            \graphicspath{{src/capitoli/04/img/}}
+            \includegraphics[width=0.5\textwidth]{toolbox-primo-avvio.png}
+            \caption{Primo avvio del toolbox}
+            \label{fig:Primo avvio del toolbox}
+        \end{figure}
+        cliccate su \textbf{Continue $\rightarrow$ Accept License Agreement $\rightarrow$ Get Started}.
+        
+        dopodiché cliccate nella rotella in alto a destra e poi su \textbf{Log in}
+        \begin{figure}[H]
+            \centering
+            \graphicspath{{src/capitoli/04/img/}}
+            \includegraphics[width=0.4\textwidth]{toolbox-login.png}
+            \caption{Menù per effettuare il login sul toolbox}
+            \label{fig:Menù per effettuare il login sul toolbox}
+        \end{figure}
+
+        vi si aprirà il browser di default sulla pagina di login di JetBrains, inserite le credenziali del vostro account, sul quale avete 
+        attiva la licenza da studenti
+        \begin{figure}[H]
+            \centering
+            \graphicspath{{src/capitoli/04/img/}}
+            \includegraphics[width=0.5\textwidth]{toolbox-login-web.png}
+            \caption{Pagina web di login al vostro account}
+            \label{fig:Pagina web di login al vostro account}
+        \end{figure}
+        e poi cliccate su \textbf{Sign In}. Vi comparirà una finestra del browser che vi chiederà il consenso per aprire il toolbox, \textbf{acconsentite}.
+        
